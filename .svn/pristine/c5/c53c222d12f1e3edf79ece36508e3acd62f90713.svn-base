@@ -1,0 +1,196 @@
+body {
+    font-family: "PT Sans", sans-serif;
+}
+
+.header {
+    width: 900px;
+    height: 60px;
+    background-color: #006ebe;
+    color: white;
+    font-size: larger;
+    padding: 5px 15px;
+}
+
+.header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.mainwrapper {
+    width: 900px;
+    height: 500px;
+}
+
+.leftPanel {
+    margin-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    background-color: #e9e9e9;
+    height: 170px;
+}
+
+.input_elem {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: white;
+    color: #757575;
+    border: solid 2px #e2e2e2;
+    text-align: left;
+    font-size: 14pt;
+    transition: color 0.15s,
+    border-color 0.35s;
+    width: 254px;
+    height: 30px;
+}
+
+.input_elem:hover {
+    color: #505050;
+    border-color: #72c9da;
+}
+
+/*
+    buttons
+               */
+.submit_button {
+    height: 50px;
+    width: 120px;
+}
+
+.left_menu {
+    height: 50%;
+    width: 100px;
+    float: left;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.button {
+    cursor: pointer;
+    background-color: #0550af;
+    color: white;
+    border: solid 3px #055ada;
+    transition: border-color 0.35s;
+    font-size: 12pt;
+}
+
+.left_menu:hover,
+.submit_button:hover,
+.selected_button{
+    border-color: #86e1f2;
+}
+
+/*
+    divs, forms etc.
+                    */
+.static_div {
+    margin-left: 104px;
+    float: left;
+}
+
+.tab_div {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    width: 520px;
+    display: flex;
+    align-items: center;
+}
+
+#menu_tabs {
+    width: 100px;
+}
+
+.tab_div,
+#menu_tabs {
+    height: 60px;
+    float: left;
+}
+
+#download_form {
+    margin-top: 2px;
+    height: 100px;
+    display: inline-block;
+}
+
+#form_div,
+#message_div,
+.leftPanel {
+    display: inline-block;
+    float: left;
+}
+
+#form_div {
+    height: 100%;
+}
+
+#submit_div {
+    float: left;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+#district_input,
+#contract_input,
+#file_name_span,
+#i_hate_ie8 {
+    display: inline-block;
+    overflow: hidden;
+}
+
+#contract_input {
+    margin-left: 4px;
+}
+
+#i_hate_ie8 {
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position-x: 220px;
+    background-image: url("../Images/uploadFile.png");
+    border-width: 2px;
+    border-color: #575757;
+    vertical-align: top;
+}
+#i_hate_ie8:hover {
+    border-color: #86e1f2;
+}
+
+/*invisible input file*/
+#file {
+    opacity: 0;
+    filter:alpha(opacity:0);
+    font-size:1000px;
+    height: 1000px;
+    width: 1000px;
+    padding:0;
+    margin: 0 0 0 -450px;
+    border:none;
+    cursor: pointer;
+}
+
+/*for cursor:pointer working in google chrome*/
+#file::-webkit-file-upload-button{
+    cursor: pointer;
+}
+
+#file_name_span {
+    padding: 10px 10px 15px;
+    width: 240px;
+    height: 30px;
+}
+
+#select_doc, #select_period {
+    margin-top: 10px;
+}
+
+/*#message_div {*/
+/*padding: 10px;*/
+/*background-color: #86e1f2;*/
+/*height: auto;*/
+/*float: right;*/
+/*}*/

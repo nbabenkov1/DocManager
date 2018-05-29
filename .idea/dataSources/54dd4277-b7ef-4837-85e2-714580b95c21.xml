@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@oracle-gf">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.1">
+    <root id="1"/>
+    <schema id="2" parent="1" name="ACTREADER">
+      <ObjectId>148</ObjectId>
+      <IntrospectionTimestamp>2018-05-10.15:36:31</IntrospectionTimestamp>
+      <CreatedTimestamp>2017-07-18.13:07:45</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-16.11:32:11</ModifiedTimestamp>
+      <CommentsHash>14003468121254</CommentsHash>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="SYSTEM">
+      <ObjectId>5</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="OUTLN">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="TSMSYS">
+      <ObjectId>21</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="DBSNMP">
+      <ObjectId>24</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="WMSYS">
+      <ObjectId>25</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="EXFSYS">
+      <ObjectId>34</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="DMSYS">
+      <ObjectId>35</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="CTXSYS">
+      <ObjectId>36</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="XDB">
+      <ObjectId>38</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="ANONYMOUS">
+      <ObjectId>39</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="ORDSYS">
+      <ObjectId>43</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="ORDPLUGINS">
+      <ObjectId>44</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="SI_INFORMTN_SCHEMA">
+      <ObjectId>45</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="MDSYS">
+      <ObjectId>46</ObjectId>
+    </schema>
+    <schema id="19" parent="1" name="MILLER">
+      <ObjectId>57</ObjectId>
+    </schema>
+    <schema id="20" parent="1" name="INSP">
+      <ObjectId>64</ObjectId>
+    </schema>
+    <schema id="21" parent="1" name="GES">
+      <ObjectId>67</ObjectId>
+    </schema>
+    <schema id="22" parent="1" name="CONTR">
+      <ObjectId>71</ObjectId>
+    </schema>
+    <schema id="23" parent="1" name="QUEST">
+      <ObjectId>75</ObjectId>
+    </schema>
+    <schema id="24" parent="1" name="STA">
+      <ObjectId>91</ObjectId>
+    </schema>
+    <schema id="25" parent="1" name="NKLIENT">
+      <ObjectId>108</ObjectId>
+    </schema>
+    <schema id="26" parent="1" name="SVD">
+      <ObjectId>116</ObjectId>
+    </schema>
+    <schema id="27" parent="1" name="TESTER">
+      <ObjectId>121</ObjectId>
+    </schema>
+    <schema id="28" parent="1" name="SM_MAIL">
+      <ObjectId>131</ObjectId>
+    </schema>
+    <schema id="29" parent="1" name="MAIL_SERVICE">
+      <ObjectId>133</ObjectId>
+    </schema>
+    <schema id="30" parent="1" name="KLIENT">
+      <ObjectId>137</ObjectId>
+    </schema>
+    <schema id="31" parent="1" name="REPORTER">
+      <ObjectId>140</ObjectId>
+    </schema>
+    <schema id="32" parent="1" name="QUESTOR">
+      <ObjectId>146</ObjectId>
+    </schema>
+    <schema id="33" parent="1" name="DEBTORS_STU">
+      <ObjectId>151</ObjectId>
+    </schema>
+    <schema id="34" parent="1" name="PRETENZREADER">
+      <ObjectId>152</ObjectId>
+    </schema>
+    <schema id="35" parent="1" name="PRETENZUSER">
+      <ObjectId>153</ObjectId>
+    </schema>
+    <schema id="36" parent="1" name="DEBTORS">
+      <ObjectId>154</ObjectId>
+    </schema>
+    <sequence id="37" parent="2" name="ACT_SEQ">
+      <ObjectId>371589</ObjectId>
+      <CreatedTimestamp>2017-10-04.09:40:50</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-04.09:40:50</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>-2147483648</CacheSize>
+    </sequence>
+    <sequence id="38" parent="2" name="BOOK_SEQ">
+      <ObjectId>371598</ObjectId>
+      <CreatedTimestamp>2017-10-04.11:28:24</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-04.11:28:24</ModifiedTimestamp>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <sequence id="39" parent="2" name="TEST_TABLE_SEQ">
+      <ObjectId>380465</ObjectId>
+      <CreatedTimestamp>2018-01-16.11:32:11</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-16.11:32:11</ModifiedTimestamp>
+      <SequenceIdentity>0..1000</SequenceIdentity>
+    </sequence>
+    <table id="40" parent="2" name="ACT_LIST">
+      <ObjectId>364420</ObjectId>
+      <CreatedTimestamp>2017-07-18.13:07:45</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-04.09:44:42</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="41" parent="2" name="BOOK">
+      <ObjectId>371596</ObjectId>
+      <CreatedTimestamp>2017-10-04.11:25:26</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-04.11:30:27</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="42" parent="2" name="TEST_TABLE">
+      <ObjectId>380463</ObjectId>
+      <CreatedTimestamp>2018-01-16.10:42:48</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-16.10:42:49</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <column id="43" parent="40" name="M_NUM">
+      <Position>1</Position>
+      <Comment>Mashine number номер машины</Comment>
+      <DataType>NUMBER(2)|0</DataType>
+    </column>
+    <column id="44" parent="40" name="RES">
+      <Position>2</Position>
+      <Comment>District number номер участка</Comment>
+      <DataType>NUMBER(2)|0</DataType>
+    </column>
+    <column id="45" parent="40" name="DOG">
+      <Position>3</Position>
+      <Comment>Contract number номер договора</Comment>
+      <DataType>NUMBER(4)|0</DataType>
+    </column>
+    <column id="46" parent="40" name="ID">
+      <Position>4</Position>
+      <DataType>NUMBER(4)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="47" parent="40" name="ID">
+      <ObjectId>371594</ObjectId>
+      <CreatedTimestamp>2017-10-04.09:37:21</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-04.09:37:21</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="48" parent="40" name="ID">
+      <ModifiedTimestamp>2017-10-04.09:37:21</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>ID</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="49" parent="40" name="ACT_ID_TRG">
+      <ObjectId>371595</ObjectId>
+      <CreatedTimestamp>2017-10-04.09:44:41</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-04.09:44:41</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="50" parent="41" name="ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="51" parent="41" name="BOOK_TITLE">
+      <Position>2</Position>
+      <DataType>VARCHAR2(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="41" name="BOOK_AUTHOR">
+      <Position>3</Position>
+      <DataType>VARCHAR2(255)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="41" name="BOOK_PRICE">
+      <Position>4</Position>
+      <DataType>NUMBER(*)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="54" parent="41" name="SYS_C00540196">
+      <ObjectId>371597</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2017-10-04.11:25:26</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-04.11:25:26</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="55" parent="41" name="SYS_C00540196">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2017-10-04.11:25:26</ModifiedTimestamp>
+      <ColNames>ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C00540196</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="56" parent="41" name="BOOKS_ID_TRG">
+      <ObjectId>371599</ObjectId>
+      <CreatedTimestamp>2017-10-04.11:30:27</CreatedTimestamp>
+      <ModifiedTimestamp>2017-10-04.11:30:27</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="57" parent="42" name="USER_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(5)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="42" name="USER_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="59" parent="42" name="KEY">
+      <ObjectId>380464</ObjectId>
+      <CreatedTimestamp>2018-01-16.10:42:49</CreatedTimestamp>
+      <ModifiedTimestamp>2018-01-16.10:42:49</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>USER_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="60" parent="42" name="KEY">
+      <ModifiedTimestamp>2018-01-16.10:42:49</ModifiedTimestamp>
+      <ColNames>USER_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>KEY</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

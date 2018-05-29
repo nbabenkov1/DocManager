@@ -1,0 +1,29 @@
+package aspects;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Around;
+import org.aspectj.lang.annotation.Aspect;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+import service.ParsingManagers.ParsingManagerOutputSingle;
+
+/**
+ * Created by N.Babenkov on 15.05.2018.
+ **/
+@Component
+@Aspect
+public class LoggingAspect {
+    private Logger singleLogger = LoggerFactory.getLogger(ParsingManagerOutputSingle.class);
+
+    @Around("execution(* service.ParsingManagers.ParsingManagerOutputSingle.getPDFForSingleContract(..))")
+    public Object singleLog(ProceedingJoinPoint joinPoint) throws Throwable{
+        Object[] args = joinPoint.getArgs();
+        StringBuilder output = new StringBuilder("");
+        for (Object arg: args)
+            output.append(arg).append(" ");
+        singleLogger.info(output.toString());
+        return joinPoint.proceed();
+    }
+}

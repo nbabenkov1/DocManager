@@ -1,0 +1,4 @@
+controllers\FileUploadControllerTest.class
+controllers\ControllerTest.class
+controllers\ParsingControllerTest.class
+utils\pdf\DocumentToPDFManagerTest.class

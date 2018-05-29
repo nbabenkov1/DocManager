@@ -1,0 +1,68 @@
+/**
+ * Created by N.Babenkov on 20.04.2018.
+ */
+$(function () {
+    var currentMonth = new Date().getMonth();
+    var selectMonth = $("#select_month");
+    var uploadForm = $("#upload_form");
+    var file = $("#file");
+    var fileNameP = $("#file_name");
+    var messageDiv = $("#message_div");
+    var submitButton = $("#submit_button");
+
+    messageDiv.hide();
+    changeMonthOptions();
+
+    submitButton.click(function(){
+        uploadForm.submit();
+    });
+
+    //disables options of upcoming months in <select>
+    function changeMonthOptions() {
+        selectMonth.fadeIn("fast");
+        selectMonth.children('option').hide();
+
+        if (currentMonth == 11) {
+            selectMonth.children("option:eq(" + 1 + "), :eq(" + 12 + "), :eq(" + 11 + ")").show();
+        }
+        else if (currentMonth == 0) {
+            selectMonth.children("option:eq(" + 1 + "), :eq(" + 2 + "), :eq(" + 12 + ")").show();
+        }
+        else {
+            // selectMonth.children("option:eq(" + currentMonth + "), :eq(" + (currentMonth + 1) + "), :eq("+ (currentMonth+2)+")").show();
+            selectMonth.children("option:eq(" + currentMonth + "), :eq(" + (currentMonth + 1) + "), :eq("+ (currentMonth+2)+")").show();
+        }
+
+        selectMonth.find("option:first-child").attr("selected", "selected");
+    }
+
+    //prevents servlet call if user didn't choose month, year or input file
+    uploadForm.submit(function (e) {
+        e.preventDefault();
+        if (!selectMonth.find("option:selected").val()) {
+            showMessage("Не выбран месяц!");
+            return;
+        } else if (!file.val()) {
+            showMessage("Не выбран файл!");
+            return;
+        } else if (!(file.val().replace(/^.*\./, '').toLowerCase() === 'txt')) {
+            showMessage("Выбранный файл не является txt!");
+            return;
+        }
+        uploadForm.attr("method", "post");
+        this.submit();
+
+    });
+
+    function showMessage(message) {
+        if (messageDiv.is(":hidden")) {
+            messageDiv.text(message);
+            messageDiv.show("fast").delay(2500).hide("normal");
+        }
+    }
+
+    file.change(function () {
+        var fileName = file.val().split('\\').pop();
+            fileNameP.text(fileName);
+    });
+});
